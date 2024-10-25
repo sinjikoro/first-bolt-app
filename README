@@ -1,0 +1,17 @@
+これは slack bolt を試すアプリです。
+
+<機能>
+1. slack上から以下指定のモーダルを表示
+  - branch
+  - env
+  - distribution user
+2. input内容をcodemagicへ送信
+3. codemagicへ送信した旨をslack上に通知
+
+<前提>
+以下環境変数を設定すること
+- SLACK_SIGNING_SECRET : 認証シークレット
+- SLACK_BOT_TOKEN : slackのbotトークン
+- SLACK_APP_TOKEN : slackのappトークン
+
+slackに以下ショートカット(ペイロード[/distribute_app])を作成すること
